@@ -1,0 +1,30 @@
+.Footer {
+  width: 100vw;
+  height: 36px;
+  background: #000000;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo_Footer {
+  width: 59.5px;
+  height: 17px;
+}
+
+.Container_icons {
+  width: 300px;
+  padding: 8px;
+  padding-left: 30px;
+}
+
+.Container_icons img {
+  padding-left: 15px;
+}
+
+.Container_footer {
+  display: flex;
+  padding-left: 100px;
+}
