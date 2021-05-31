@@ -6,7 +6,7 @@ export default function Map() {
     latitude: 23.634501,
     longitude: -102.552784,
     width: "100vw",
-    height: "91vh",
+    height: "100vh",
     zoom: 5,
   });
   return (
