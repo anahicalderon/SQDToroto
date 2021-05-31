@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import ReactMapGL, { Marker } from "react-map-gl";
+
+import ReactMapGL, {Marker, Popup} from "react-map-gl";
+import * as ubicaciones from "./Componentes/Ubicacion.json"
+import Vector from '../src/Assets/Vector.png'
+
 
 export default function Map() {
   const [viewport, setViewport] = useState({
@@ -9,6 +13,10 @@ export default function Map() {
     height: "100vh",
     zoom: 5,
   });
+
+  const [selectedPin, setSelectedPin] = useState(null);
+
+  
   return (
     <div>
       <ReactMapGL
@@ -19,23 +27,44 @@ export default function Map() {
           setViewport(viewport);
         }}
       >
-        <Marker latitude={18.4486309} longitude={-90.2192165}>
+        {ubicaciones.features.map((ubicacion)=>(
+          <Marker 
+          latitude={ubicacion.geometry.coordinates[0]}
+          longitude={ubicacion.geometry.coordinates[1]}
+          >
           <img
-            alt="marker"
-            src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png"
+            alt="Proyecto"
+            src={Vector}
             width={40}
             height={40}
-          />
-        </Marker>
-        <Marker latitude={18.609742} longitude={-89.3112548}>
-          <img
-            alt="marker"
-            src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png"
-            width={40}
-            height={40}
-          />
-        </Marker>
+            onMouseOver = {(e)=>{
+              e.preventDefault();
+              setSelectedPin(ubicacion)
+            }
+              
+            }
+            />
+          </Marker>
+        )
+
+        )}
+        {selectedPin ? (
+                  <Popup 
+                  latitude={selectedPin.geometry.coordinates[0]} 
+                  longitude={selectedPin.geometry.coordinates[1]} 
+                  onClose={()=>{
+                    setSelectedPin(null);
+                  }}>
+                    <div>
+                      <h2>{selectedPin.properties.title}</h2>
+                      <p>{selectedPin.properties.description}</p>
+                      <button>Mas Información</button>
+                    </div>
+                 </Popup>
+        ) : null }
       </ReactMapGL>
     </div>
+    
   );
+
 }
