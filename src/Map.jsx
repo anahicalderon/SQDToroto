@@ -3,6 +3,7 @@ import ReactMapGL, {Marker, Popup} from "react-map-gl";
 import * as ubicaciones from "./Componentes/Ubicacion.json"
 import Vector from '../src/Assets/Vector.png'
 
+
 export default function Map() {
   const [viewport, setViewport] = useState({
     latitude: 18.4442,
@@ -60,6 +61,7 @@ export default function Map() {
                     </div>
                  </Popup>
         ) : null }
+
 
       </ReactMapGL>
     </div>
