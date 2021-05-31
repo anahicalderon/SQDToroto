@@ -1,0 +1,42 @@
+.Navbar {
+  width: 100vw;
+  height: 33px;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  padding-left: 30px;
+  padding-right: 200px;
+}
+
+.Button_Navbar {
+  font-size: 12px;
+  line-height: 18px;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+.Dropdown {
+  background: #000000;
+  color: white;
+}
+
+.Dropdown1 {
+  background: #000000;
+  color: white;
+}
+
+.Container_dropdown {
+  display: flex;
+}
+
+.Container_nav {
+  display: flex;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import ReactMapGL, {Marker, Popup} from "react-map-gl";
 import * as ubicaciones from "./Componentes/Ubicacion.json"
 import Vector from '../src/Assets/Vector.png'
@@ -6,8 +7,8 @@ import Vector from '../src/Assets/Vector.png'
 
 export default function Map() {
   const [viewport, setViewport] = useState({
-    latitude: 18.4442,
-    longitude: -89.1036,
+    latitude: 23.634501,
+    longitude: -102.552784,
     width: "100vw",
     height: "100vh",
     zoom: 5,
@@ -61,8 +62,6 @@ export default function Map() {
                     </div>
                  </Popup>
         ) : null }
-
-
       </ReactMapGL>
     </div>
     
