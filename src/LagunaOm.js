@@ -120,7 +120,7 @@ export default function LagunaOm() {
           },
         });
 
-      // Add a new layer to visualize the polygon.
+      // Add a new layer to visualize the polygon
       map.addControl(new mapboxgl.NavigationControl());
       map.addControl(new mapboxgl.FullscreenControl());
     });
