@@ -1,20 +1,23 @@
 import "./Navbar.css";
 import logo from "./Assets/toroto_logo.png";
 import CustomizedButtons from "./Button";
-//import {historyPage} from "./MasInfo";
+import MasInfo from './MasInfo';
+import { Link } from 'react-router-dom';
+
 
 export default function Navbar() {
   
-
+   
+  
 
   return (
     <div className="Navbar">
       <div>
-        <img className="Logo" src={logo} alt="logo" />
+        <img  className="Logo" src={logo} alt="logo" />
       </div>
       
       <div className="Container_nav">
-        <CustomizedButtons  title="Más Información"></CustomizedButtons>
+         <Link to = './MasInfo' className="Botonlink" title="Más Información">Más Información</Link>
         
       </div>
     </div>

@@ -1,5 +1,4 @@
 import "./MasInfo.css";
-import { useHistory } from 'react-router';
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import bosquea from "../src/Assets/bosquea.png"
@@ -9,15 +8,18 @@ import bosqued from "../src/Assets/bosqued.png"
 import bosquee from "../src/Assets/bosquee.png"
 import bosquef from "../src/Assets/bosquef.png"
 import bosqueg from "../src/Assets/bosqueg.png"
-
+import { useHistory } from 'react-router';
 
 function MasInfo() {
-    
+    const history = useHistory();
+
+    const historyPage = () => {
+        history.push('/')
+    }
    
- 
     return (
-        <div>
-           
+        <div >
+           <button className="botonV"  onClick={historyPage} title="Más Información">Volver</button>
             <div>
                 {Navbar}
             </div>

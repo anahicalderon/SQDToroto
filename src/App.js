@@ -10,8 +10,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (<div className="App">
-    <Navbar />
+    
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path="/">
           <Map />
@@ -26,8 +27,9 @@ function App() {
           <MasInfo />
         </Route>
       </Switch>
+      <Footer />
     </Router>
-    <Footer />
+    
     
   </div>);
 }

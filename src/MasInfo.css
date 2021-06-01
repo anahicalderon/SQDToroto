@@ -25,7 +25,6 @@ h2{
 }
 p{
     
-   
     padding: 15%;
     font-family: "Oswald";
     font-size: large;
@@ -37,4 +36,10 @@ p{
 .Toroto{
   display: flex;
   align-items: center;
+}
+.botonV {
+    stroke: #BA1863;
+    background-color:transparent;
+    margin: 10px;
+    
 }
