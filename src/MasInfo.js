@@ -32,7 +32,7 @@ function MasInfo() {
                         <img 
                         src={bosquea} width="300px" ></img>
                         <div className="div-parrafos">  
-                            <h2>¿Qué hace toroto?</h2>
+                            <h2>¿Qué hace Toroto?</h2>
 
                             <p>Cumpliendo con los estándares internacionales más robustos, te ayudamos a medir, reducir y
                             neutralizar tu huella de carbono de manera que agregue valor a tu compañía y al medio ambiente.
@@ -58,9 +58,9 @@ function MasInfo() {
                     <img src={bosquee} width="300px" ></img>
                         <div className="div-parrafos">
                         <h2>¿Qué son los bonos de carbono?</h2>
-                        <p>Los bonos de carbono son un mecanismo internacional para reducir las emisiones de CO2
-                        que contribuyen al calentamiento global.
-                        Un bono de carbono representa el derecho a emitir una tonelada de dióxido de carbono.
+                        <p>Un bono de carbono representa el derecho a emitir una tonelada de CO2— permite mitigar la generación de gases de efecto invernadero, 
+                            beneficiando a las empresas que no emiten o disminuyen la emisión y haciendo pagar a las que emiten más de lo permitido.
+
                          </p>
                          </div>
                     <img src={bosqueg} width="300px" ></img>
@@ -81,12 +81,13 @@ function MasInfo() {
                         <div className="div-parrafos">
                         <h2>¿Qué define a un proyecto de captura de carbono?</h2>
                         <p>
-                            Nuestro equipo de ingeniería en gestión de carbono puede medir tu huella de carbono de una manera que se adhiere al Protocolo GHG,
-                            que es el protocolo que más se usa para medir y reportar las emisiones de gases de efecto invernadero.
-                            Después, en conjunto estableceremos metas y seguiremos tu huella de carbono durante el año.
-                            Esto se hace de una manera perfecta a través de nuestras soluciones tecnológicas patentadas.
-                            Lo que no se pueda reducir, tiene que ser neutralizado. Mediante el apoyo o el funcionamiento de proyectos
-                            forestales de alto nivel, Toroto ofrece compensaciones de carbono certificadas por terceros que se ajustan a las normas internacionales más estrictas y generan ingresos en las zonas rurales.
+                        En Toroto a diferencia de otras empresas,  integramos todos los procesos 
+                        de captura de carbono brindandote la confianza de que  vas adquirir un bono de carbono de calidad, con esto nos referimos a que tu bono siga mitigando el impacto ambiental de forma permanente de la siguiente manera:
+                        -Diseño y operación de proyectos de conservación y restauración  ecológica.
+                        -certificación de proyectos de captura de carbono.
+                        -Programas de compensación a través de nuestros programas de captura de carbono.
+                        -estrategias de mitigación.
+                        -Inventario de   Gases Efecto Invernadero. 
                         </p>
                         </div>
                         

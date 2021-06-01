@@ -12,6 +12,7 @@
 
 .Logo {
   padding-left: 30px;
+  padding-top:6px;
   padding-right: 200px;
 }
 
@@ -38,7 +39,10 @@
 
 .Container_nav {
   display: flex;
+
 }
+
+
 .div-parrafos p {
   padding-top: 0;
   
@@ -46,4 +50,6 @@
 .Botonlink{
   color: white;
   padding-right: 30px;
+  
 }
+

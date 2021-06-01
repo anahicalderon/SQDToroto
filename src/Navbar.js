@@ -17,7 +17,7 @@ export default function Navbar() {
       </div>
       
       <div className="Container_nav">
-         <Link to = './MasInfo' className="Botonlink" title="Más Información">Más Información</Link>
+         <Link style={{textDecoration:"none"}} to = './MasInfo' className="Botonlink" title="Más Información">Más Información</Link>
         
       </div>
     </div>

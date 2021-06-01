@@ -15,13 +15,12 @@
 h2{
     padding-top: 3%;
     text-align: center;
-     font-family: Oswald;
+    font-family: "Oswald";
      font-style: normal;
-     font-weight: normal;
      font-size: 35px;
      line-height: 71px;
      color:#BA1863;
-     
+     font-weight: 600;
 }
 p{
     
@@ -41,5 +40,6 @@ p{
     stroke: #BA1863;
     background-color:transparent;
     margin: 10px;
-    
+    font-family: "Oswald";
 }
+
