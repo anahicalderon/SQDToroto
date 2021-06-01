@@ -3,7 +3,7 @@
   height: 33px;
   left: 0px;
   top: 0px;
-  background-color: black;
+  background-color: #1930DB;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -18,18 +18,17 @@
 .Button_Navbar {
   font-size: 12px;
   line-height: 18px;
-  background-color: black;
   color: white;
   outline: none;
 }
 
 .Dropdown {
-  background: #000000;
+ 
   color: white;
 }
 
 .Dropdown1 {
-  background: #000000;
+
   color: white;
 }
 

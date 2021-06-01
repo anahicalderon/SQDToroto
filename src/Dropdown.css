@@ -1,21 +1,21 @@
 .Dropdown {
-  background-color: black;
+  background-color: #1930DB;
   font-family: "Oswald";
   border: none;
   width: 108px;
   font-size: 12px;
+  
 }
-
-.Dropdown:hover {
-  color: #ffbc15;
-  background-color: black;
+.Dropdown:hover{
+  background-color: #BA1863 ;
 }
 
 .Dropdown_option {
   color: white;
+ 
 }
 
 .Dropdown_option:hover {
-  color: #ffbc15;
-  background-color: black;
+  color: black;
+  
 }

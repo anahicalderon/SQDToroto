@@ -6,7 +6,7 @@ const BootstrapButton = withStyles({
   root: {
     boxShadow: "none",
     textTransform: "none",
-    backgroundColor: "black",
+    backgroundColor: "transparent",
     color: "white",
     fontStyle: "normal",
     fontWeight: "normal",
@@ -14,14 +14,14 @@ const BootstrapButton = withStyles({
     lineHeight: "19px",
     fontFamily: ["Oswald", "sans-serif", '"Apple Color Emoji"'].join(","),
     "&:hover": {
-      color: "#FFBC15",
-      backgroundColor: "black",
+     
+      backgroundColor: "#BA1863 ",
     },
     "&:active": {
       boxShadow: "none",
     },
     "&:focus": {
-      color: "#FFBC15",
+      color: "#FFF",
     },
   },
 })(Button);
