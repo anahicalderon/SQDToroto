@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
 import SidebarBecal from "./SidebarBecal";
 
-export default function Map() {
+export default function Map_becal() {
   const [viewport, setViewport] = useState({
     latitude: 18.609742,
     longitude: -89.3112548,
