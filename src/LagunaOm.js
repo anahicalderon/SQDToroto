@@ -124,7 +124,7 @@ export default function LagunaOm() {
       map.addControl(new mapboxgl.NavigationControl());
       map.addControl(new mapboxgl.FullscreenControl());
     });
-  }) 
+  },[]) 
 
   return (
     <>

@@ -5,6 +5,7 @@ import cv from './Data/NuevoBecal/Cobertura_Vegetal.geojson'
 import ff from './Data/NuevoBecal/Flora_Fauna.geojson'
 import lb from './Data/NuevoBecal/Localidades_Beneficiadas.geojson'
 import tcc from './Data/NuevoBecal/Carbono.geojson'
+import SidebarBecal from './SidebarBecal'
 
 mapboxgl.accessToken ="pk.eyJ1IjoiZWxpemFiZXRoZ2giLCJhIjoiY2twOHBkaHNvMDN1MjJvcDR6aGhpM2h2ayJ9.U3EK7VZc-urMFKxXy83cpQ";
 
@@ -121,13 +122,11 @@ export default function NuevoBecal() {
       map.addControl(new mapboxgl.NavigationControl());
       map.addControl(new mapboxgl.FullscreenControl());
     });
-  }) 
+  },[]) 
 
   return (
     <>
-    <head><link
-    href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css'
-    rel='stylesheet'/></head>
+    <SidebarBecal/>
     <div id="map" style={{height:"100vh", width:"100%"}}>
     </div>
     </>
