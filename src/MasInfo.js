@@ -29,7 +29,7 @@ function MasInfo() {
                     <div className="Toroto" >
                         <img 
                         src={bosquea} width="300px" ></img>
-                        <div>
+                        <div className="div-parrafos">  
                             <h2>¿Qué hace toroto?</h2>
 
                             <p>Cumpliendo con los estándares internacionales más robustos, te ayudamos a medir, reducir y
@@ -41,9 +41,9 @@ function MasInfo() {
 
                     <div className="Toroto"> 
                     <img src={bosquef} width="400px" ></img>
-                        <div>
-                        <h2>¿Qué es la captura de carbono ?</h2>
-                        <p>
+                        <div className="div-parrafos">
+                            <h2>¿Qué es la captura de carbono ?</h2>
+                            <p>
                             El proceso consiste en tres etapas principales:
                             Capturar el CO2 en su fuente, separándolo de los otros gases que se generan en los procesos industriales.
                             Transportar el CO2 capturado a un lugar de almacenamiento apropiado
@@ -54,7 +54,7 @@ function MasInfo() {
                     
                     <div className="Toroto">
                     <img src={bosquee} width="300px" ></img>
-                        <div>
+                        <div className="div-parrafos">
                         <h2>¿Qué son los bonos de carbono?</h2>
                         <p>Los bonos de carbono son un mecanismo internacional para reducir las emisiones de CO2
                         que contribuyen al calentamiento global.
@@ -66,7 +66,7 @@ function MasInfo() {
                     
                     <div className="Toroto">
                        
-                        <div>
+                        <div className="div-parrafos">
                         <h2>¿Qué es el mercado de carbono?</h2>
                         <p>
                             Un mercado de carbono tiene el propósito de reducir las emisiones de efecto invernadero, a través de la compra de permisos de emisión.
@@ -76,7 +76,7 @@ function MasInfo() {
                     </div>
                     <div className="Toroto">
                     <img src={bosqued} width="400px"></img>
-                        <div>
+                        <div className="div-parrafos">
                         <h2>¿Qué define a un proyecto de captura de carbono?</h2>
                         <p>
                             Nuestro equipo de ingeniería en gestión de carbono puede medir tu huella de carbono de una manera que se adhiere al Protocolo GHG,

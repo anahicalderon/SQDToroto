@@ -18,10 +18,7 @@ export default function Footer() {
         <img src={twitter} alt="logo" />
       </div>
       <img className="Logo_Footer" src={logo} alt="logo" />
-      <div className="Container_footer">
-        <CustomizedButtons title="Más Informacioón"></CustomizedButtons>
-        <CustomizedButtons title="FAQ"></CustomizedButtons>
-      </div>
+      
     </div>
   );
 }

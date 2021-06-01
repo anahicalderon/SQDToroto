@@ -39,3 +39,7 @@
 .Container_nav {
   display: flex;
 }
+.div-parrafos p {
+  padding-top: 0;
+  
+}
