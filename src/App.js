@@ -3,7 +3,7 @@ import Map from "./Map";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import LagunaOm from "./LagunaOm";
-import NuevoBacal from "./Nuevo Becal";
+import NuevoBecal from "./Nuevo Becal";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
@@ -19,8 +19,8 @@ function App() {
           <Route exact path="/LagunaOm">
             <LagunaOm />
           </Route>
-          <Route exact path="/Nuevo Becal">
-            <NuevoBacal />
+          <Route exact path="/NuevoBecal">
+            <NuevoBecal />
           </Route>
         </Switch>
       </Router>
