@@ -3,7 +3,7 @@ import Map from "./Map";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import LagunaOm from "./LagunaOm";
-import NuevoBecal from "./Nuevo Becal";
+import NuevoBecal from "./NuevoBecal";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
