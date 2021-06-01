@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
-import SideBar from "./SideBar";
+import SidebarBecal from "./SidebarBecal";
 
 export default function Map() {
   const [viewport, setViewport] = useState({
-    latitude: 18.4486309,
-    longitude: -90.2192165,
+    latitude: 18.609742,
+    longitude: -89.3112548,
     width: "100vw",
     height: "91vh",
     zoom: 9,
@@ -13,7 +13,7 @@ export default function Map() {
   });
   return (
     <div>
-      <SideBar />
+      <SidebarBecal />
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken="pk.eyJ1IjoiZWxpemFiZXRoZ2giLCJhIjoiY2twOHBkaHNvMDN1MjJvcDR6aGhpM2h2ayJ9.U3EK7VZc-urMFKxXy83cpQ"
@@ -23,6 +23,5 @@ export default function Map() {
         }}
       ></ReactMapGL>
     </div>
-    </>
   );
-};
+}
