@@ -83,7 +83,7 @@ function LagunaOm() {
   });
 
   function renderLayer(item) {
-    // item === "Boton1" ? (
+    // item === "Boton" ? (
     //   <Layer {...layers.features[0]} />
     // ) : item === "Boton2" ? (
     //   <Layer {...layers.features[1]} />
