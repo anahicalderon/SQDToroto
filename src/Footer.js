@@ -6,7 +6,7 @@ import instagram from "./Assets/INSTAGRAM.png";
 import twitter from "./Assets/Twitter.png";
 
 import "./Footer.css";
-import CustomizedButtons from "./Button";
+
 
 export default function Footer() {
   return (
