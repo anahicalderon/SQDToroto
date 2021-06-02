@@ -76,9 +76,6 @@ const ButtonFauna = withStyles({
     lineHeight: "19px",
     borderRadius: "0",
     fontFamily: ["Oswald", "sans-serif", '"Apple Color Emoji"'].join(","),
-    "&:hover": {
-      color: "#FFBC15",
-    },
     "&:active": {
       boxShadow: "none",
     },
@@ -86,7 +83,7 @@ const ButtonFauna = withStyles({
 })(Button);
 
 function SidebarBecal() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const list = () => (
     <div style={{ width: 280 }} onClick={() => setOpen(false)}>
       <List>
@@ -97,30 +94,21 @@ function SidebarBecal() {
             width="250px"
           />,
           <div>
-            <ButtonSidebar variant="contained">Datos Generales</ButtonSidebar>
-            <ButtonSidebar variant="contained">Flora y Fauna</ButtonSidebar>
-            <ButtonSidebar variant="contained">Detalles</ButtonSidebar>
-            <ButtonSidebar variant="contained">Multimedia</ButtonSidebar>
-            <ButtonSidebar variant="contained">Ubicación</ButtonSidebar>
-            <ButtonSidebar variant="contained">Documentos</ButtonSidebar>
-          </div>,
-          <div className="container_flora_fauna">
-            <div>
-              FLORA
-              <ButtonFlora>Adelia Barbinervis</ButtonFlora>
-              <ButtonFlora>Euphorbiaceae</ButtonFlora>
-              <ButtonFlora>Tamandua Mexicana</ButtonFlora>
-              <ButtonFlora>Myrmecophagidae</ButtonFlora>
-              <ButtonFlora>Nombre</ButtonFlora>
-            </div>
-            <div>
-              FAUNA
-              <ButtonFauna>Nombre</ButtonFauna>
-              <ButtonFauna>Nombre</ButtonFauna>
-              <ButtonFauna>Nombre</ButtonFauna>
-              <ButtonFauna>Nombre</ButtonFauna>
-              <ButtonFauna>Nombre</ButtonFauna>
-            </div>
+            <ButtonSidebar id="adp" variant="contained">
+              ADP
+            </ButtonSidebar>
+            <ButtonSidebar id="coverage" variant="contained">
+              Cobertura Vegetal
+            </ButtonSidebar>
+            <ButtonSidebar id="ff" variant="contained">
+              Flora y Fauna
+            </ButtonSidebar>
+            <ButtonSidebar id="lb" variant="contained">
+              Localidades Beneficiadas
+            </ButtonSidebar>
+            <ButtonSidebar id="tcc" variant="contained">
+              Carbono
+            </ButtonSidebar>
           </div>,
         ].map((label, index) => (
           <ListItem button key={index}>
