@@ -47,13 +47,13 @@ function Sidebar(props) {
       <ButtonSidebar onClick={() => props.renderHijo(1)}>
         Índices de vegetación
       </ButtonSidebar>
-      <ButtonSidebar onClick={() => props.renderHijo(2)}>
+      <ButtonSidebar onClick={() => props.renderHijo(3)}>
         Concentración de carbono
       </ButtonSidebar>
-      <ButtonSidebar onClick={() => props.renderHijo(3)}>
+      <ButtonSidebar onClick={() => props.renderHijo(4)}>
         Ubicación de flora y fauna
       </ButtonSidebar>
-      <ButtonSidebar onClick={() => props.renderHijo(4)}>
+      <ButtonSidebar onClick={() => props.renderHijo(2)}>
         Localidades beneficiadas
       </ButtonSidebar>
     </div>
