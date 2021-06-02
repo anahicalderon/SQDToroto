@@ -6,7 +6,6 @@ import ff from "./Data/LagunaOm/Flora_Fauna.geojson";
 import lb from "./Data/LagunaOm/Localidades_Beneficiadas.geojson";
 import tcc from "./Data/LagunaOm/Ton_CO2_carbono.geojson";
 import Sidebar from "./SideBar";
-
 export const layers = {
   type: "FeatureCollection",
   features: [
@@ -42,7 +41,7 @@ export const layers = {
       source: "FF",
       layout: {},
       paint: {
-        "circle-radius": 8,
+        "circle-radius": 1,
         "circle-color": "rgb(128, 0, 0)",
       },
     },
@@ -54,7 +53,7 @@ export const layers = {
       source: "LB",
       layout: {},
       paint: {
-        "circle-radius": 5,
+        "circle-radius": 1,
         "circle-color": "rgb(0, 0, 0)",
       },
     },
@@ -72,34 +71,21 @@ export const layers = {
     },
   ],
 };
-
 function LagunaOm() {
-  const [layer, setLayer] = React.useState(0);
-
+  var number = localStorage.getItem("number");
+  const [layer, setLayer] = React.useState(number);
   const [viewport, setViewport] = React.useState({
     longitude: -89.15095099588774,
     latitude: 18.701800462540451,
     zoom: 9,
   });
-
   function renderLayer(item) {
-    // item === "Boton" ? (
-    //   <Layer {...layers.features[0]} />
-    // ) : item === "Boton2" ? (
-    //   <Layer {...layers.features[1]} />
-    // ) : item === "Boton3" ? (
-    //   <Layer {...layers.features[2]} />
-    // ) : item === "Boton4" ? (
-    //   <Layer {...layers.features[3]} />
-    // ) : (
-    //   <Layer {...layers.features[4]} />
-    // );
-    setLayer(item);
-    document.location.reload();
-    console.log(item);
-    // return <Layer {...layers.features[item]} />;
+    localStorage.setItem("number", item);
+    window.location.reload();
   }
-
+  function ShowLayer() {
+    return <Layer {...layers.features[layer]} />;
+  }
   return (
     <div className="container_sidebar_laguna">
       <Sidebar renderHijo={renderLayer} />
@@ -113,8 +99,7 @@ function LagunaOm() {
           onViewportChange={setViewport}
         >
           <Source id="my-data" type="geojson" data={(adp, cv, ff, lb, tcc)}>
-            <Layer {...layers.features[layer]} />
-            {/* {renderLayer} */}
+            {layer ? <Layer {...layers.features[layer]} /> : null}
           </Source>
         </ReactMapGL>
       </div>

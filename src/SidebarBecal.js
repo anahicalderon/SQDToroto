@@ -41,19 +41,19 @@ function SidebarBecal(props) {
         width="250px"
         height="200px"
       />
-      <ButtonSidebar onClick={() => props.renderHijo("Boton1")}>
+      <ButtonSidebar onClick={() => props.renderHijo(0)}>
         Localización y delimitación del proyecto
       </ButtonSidebar>
-      <ButtonSidebar onClick={() => props.renderHijo("Boton2")}>
+      <ButtonSidebar onClick={() => props.renderHijo(1)}>
         Índices de vegetación
       </ButtonSidebar>
-      <ButtonSidebar onClick={() => props.renderHijo("Boton3")}>
+      <ButtonSidebar onClick={() => props.renderHijo(3)}>
         Concentración de carbono
       </ButtonSidebar>
-      <ButtonSidebar onClick={() => props.renderHijo("Boton4")}>
+      <ButtonSidebar onClick={() => props.renderHijo(4)}>
         Ubicación de flora y fauna
       </ButtonSidebar>
-      <ButtonSidebar onClick={() => props.renderHijo("Boton5")}>
+      <ButtonSidebar onClick={() => props.renderHijo(2)}>
         Localidades beneficiadas
       </ButtonSidebar>
     </div>
