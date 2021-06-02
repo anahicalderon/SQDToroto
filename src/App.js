@@ -3,29 +3,33 @@ import Map from "./Map";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import LagunaOm from "./LagunaOm";
-import NuevoBecal from "./NuevoBecal";
+import NuevoBacal from "./NuevoBecal";
+import MasInfo from "./MasInfo";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
+  return (<div className="App">
+    
+    <Router>
       <Navbar />
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Map />
-          </Route>
-          <Route exact path="/LagunaOm">
-            <LagunaOm />
-          </Route>
-          <Route exact path="/NuevoBecal">
-            <NuevoBecal />
-          </Route>
-        </Switch>
-      </Router>
+      <Switch>
+        <Route exact path="/">
+          <Map />
+        </Route>
+        <Route exact path="/lagunaom">
+          <LagunaOm />
+        </Route>
+        <Route exact path="/nuevobecal">
+          <NuevoBacal />
+        </Route>
+        <Route exact path="/MasInfo">
+          <MasInfo />
+        </Route>
+      </Switch>
       <Footer />
-    </div>
-  );
+    </Router>
+    
+    
+  </div>);
 }
-
 export default App;
