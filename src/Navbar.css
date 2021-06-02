@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+.Navbar {
+  width: 100vw;
+  height: 33px;
+  left: 0px;
+  top: 0px;
+  background-color: #1930DB;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  padding-left: 30px;
+  padding-top:6px;
+  padding-right: 200px;
+}
+
+.Button_Navbar {
+  font-size: 12px;
+  line-height: 18px;
+  color: white;
+  outline: none;
+}
+.Container_nav {
+  display: flex;
+
+}
+.div-parrafos p {
+  padding-top: 0;
+}
+.Botonlink{
+  color:white;
+  padding-right: 30px;
+  font-family: "Oswald";
+  font-weight: 550;
+}
+.Botonlink:hover{
+ color: black;
+ 
+}

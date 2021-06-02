@@ -1,14 +1,20 @@
 import React, { useState } from "react";
-import ReactMapGL from "react-map-gl";
+import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import * as ubicaciones from "./Componentes/Ubicacion.json";
+import Vector from "../src/Assets/Vector.png";
+import { Link } from "react-router-dom";
 
 export default function Map() {
   const [viewport, setViewport] = useState({
-    latitude: 18.4442,
-    longitude: -89.1036,
+    latitude: 23.634501,
+    longitude: -102.552784,
     width: "100vw",
     height: "100vh",
-    zoom: 10,
+    zoom: 5,
   });
+
+  const [selectedPin, setSelectedPin] = useState(null);
+
   return (
     <div>
       <ReactMapGL
@@ -19,7 +25,42 @@ export default function Map() {
           setViewport(viewport);
         }}
       >
-        marker here
+        {ubicaciones.features.map((ubicacion) => (
+          <Marker
+            latitude={ubicacion.geometry.coordinates[0]}
+            longitude={ubicacion.geometry.coordinates[1]}
+          >
+            <img
+              alt="Proyecto"
+              src={Vector}
+              width={40}
+              height={40}
+              onMouseOver={(e) => {
+                e.preventDefault();
+                setSelectedPin(ubicacion);
+              }}
+            />
+          </Marker>
+        ))}
+        {selectedPin ? (
+          <Popup
+            latitude={selectedPin.geometry.coordinates[0]}
+            longitude={selectedPin.geometry.coordinates[1]}
+            onClose={() => {
+              setSelectedPin(null);
+            }}
+          >
+            <div className="popup-container">
+              <div className="popup-info">
+              <h2>{selectedPin.properties.title}</h2>
+              <p>{selectedPin.properties.description}</p>
+              <Link to="lagunaom">
+                <button className="info-button">Mas Información</button>
+              </Link>
+              </div>
+            </div>
+          </Popup>
+        ) : null}
       </ReactMapGL>
     </div>
   );
