@@ -81,10 +81,6 @@ function NuevoBecal() {
      onViewportChange={setViewport}>
       <Source id="my-data" type="geojson" data={adp,cv}>
         <Layer {...layers.features[0]} />
-        <Layer {...layers.features[1]} />
-        <Layer {...layers.features[2]} />
-        <Layer {...layers.features[3]} />
-        <Layer {...layers.features[4]} />
       </Source>
     </ReactMapGL>
   );
