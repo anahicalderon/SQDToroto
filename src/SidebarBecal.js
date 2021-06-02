@@ -31,7 +31,7 @@ const ButtonSidebar = withStyles({
   },
 })(Button);
 
-function SidebarBecal() {
+function SidebarBecal(props) {
   return (
     <div className="sidebar">
       <h3>Nuevo Becal</h3>
@@ -41,11 +41,21 @@ function SidebarBecal() {
         width="250px"
         height="200px"
       />
-      <ButtonSidebar>Localización y delimitación del proyecto</ButtonSidebar>
-      <ButtonSidebar>Índices de vegetación</ButtonSidebar>
-      <ButtonSidebar>Concentración de carbono</ButtonSidebar>
-      <ButtonSidebar>Ubicación de flora y fauna</ButtonSidebar>
-      <ButtonSidebar>Localidades beneficiadas</ButtonSidebar>
+      <ButtonSidebar onClick={() => props.renderHijo("Boton1")}>
+        Localización y delimitación del proyecto
+      </ButtonSidebar>
+      <ButtonSidebar onClick={() => props.renderHijo("Boton2")}>
+        Índices de vegetación
+      </ButtonSidebar>
+      <ButtonSidebar onClick={() => props.renderHijo("Boton3")}>
+        Concentración de carbono
+      </ButtonSidebar>
+      <ButtonSidebar onClick={() => props.renderHijo("Boton4")}>
+        Ubicación de flora y fauna
+      </ButtonSidebar>
+      <ButtonSidebar onClick={() => props.renderHijo("Boton5")}>
+        Localidades beneficiadas
+      </ButtonSidebar>
     </div>
   );
 }
