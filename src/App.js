@@ -7,7 +7,6 @@ import NuevoBacal from "./NuevoBecal";
 import MasInfo from "./MasInfo";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-
 function App() {
   return (<div className="App">
     
