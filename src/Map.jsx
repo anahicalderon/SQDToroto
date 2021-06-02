@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import * as ubicaciones from "./Componentes/Ubicacion.json";
 import Vector from "../src/Assets/Vector.png";
@@ -51,12 +50,14 @@ export default function Map() {
               setSelectedPin(null);
             }}
           >
-            <div className="popup-info">
+            <div className="popup-container">
+              <div className="popup-info">
               <h2>{selectedPin.properties.title}</h2>
               <p>{selectedPin.properties.description}</p>
               <Link to="lagunaom">
                 <button className="info-button">Mas Información</button>
               </Link>
+              </div>
             </div>
           </Popup>
         ) : null}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 .Navbar {
   width: 100vw;
   height: 33px;
@@ -22,34 +23,20 @@
   color: white;
   outline: none;
 }
-
-.Dropdown {
- 
-  color: white;
-}
-
-.Dropdown1 {
-
-  color: white;
-}
-
-.Container_dropdown {
-  display: flex;
-}
-
 .Container_nav {
   display: flex;
 
 }
-
-
 .div-parrafos p {
   padding-top: 0;
-  
 }
 .Botonlink{
-  color: white;
+  color:white;
   padding-right: 30px;
-  
+  font-family: "Oswald";
+  font-weight: 550;
 }
-
+.Botonlink:hover{
+ color: black;
+ 
+}

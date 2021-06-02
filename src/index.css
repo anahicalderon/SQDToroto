@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 body {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Oswald";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Oswald";
 }
 
 .marker {
@@ -19,54 +18,67 @@ code {
   border-radius: 50%;
   cursor: pointer;
 }
-
-.popup-info {
-  position: absolute;
-  width: 200px;
+.popup-container {
+  border-radius: 15px;
+  width: 140px;
   height: 100px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
   align-items: center;
   padding: 2px;
+  border-color: #FFBC15;
 }
 
-.info-button {
-  position: absolute;
+.popup-container button {
+  position:relative;
+  margin-top: 0px;
   width: 79px;
-  height: 38px;
-  margin-left: 60%;
-  background: #0ed956;
-  border-radius: 0px 0px 15px 0px;
+  height: 25px;
+  margin-left: 23%;
   font-size: 10px;
+  font-family: "Oswald";
+  border-color: rgba(186, 24, 99, 0.5);
+  
+}
+.popup-container button:hover{
+  background-color:rgba(186, 24, 99, 0.5);
 }
 
 .popup-info h2 {
   text-align: center;
-  font-family: Oswald;
+  font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 24px;
-  color: #0ed956;
+  color:#BA1863;
+  font-weight: 600;
+  
 }
 .popup-info p {
   text-align: center;
-  font-family: Oswald;
+  font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
-  font-size: 12.8px;
+  font-size: 16px;
   line-height: 19px;
-
   color: #3a3a3a;
+  padding: 5px;
 }
 .popup-info a {
   text-align: end;
+ 
 }
 
 .map-container {
   height: 400px;
+  
 }
-.mapboxgl-popup {
+.mapboxgl-popup-close-button {
   max-width: 400px;
   font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  background:#FFBC15;
+  position: absolute;
+  
+
 }
